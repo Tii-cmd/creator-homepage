@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A sleek personal homepage for the Creator — projects, systems, and contact." />
+  <title>Creator — Shadow Systems & Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="aurora aurora-1"></div>
+  <div class="aurora aurora-2"></div>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Creator homepage">
+      <span class="brand-mark">◈</span>
+      <span>Creator</span>
+    </a>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#systems">Systems</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+      <span class="theme-icon" aria-hidden="true">☾</span>
+      <span class="theme-label">Theme</span>
+    </button>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Personal homepage · Free hosting ready</p>
+        <h1>Welcome to the Creator’s domain.</h1>
+        <p class="lead">
+          I build clean systems, focused projects, and quiet automation that makes the script run smoother.
+        </p>
+
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">View work</a>
+          <a class="button button-secondary" href="#contact">Contact</a>
+        </div>
+
+        <div class="hero-stats" aria-label="Highlights">
+          <article class="stat-card">
+            <strong>3</strong>
+            <span>focus areas</span>
+          </article>
+          <article class="stat-card">
+            <strong>1</strong>
+            <span>clear arc</span>
+          </article>
+          <article class="stat-card">
+            <strong>∞</strong>
+            <span>iterations</span>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-panel" aria-label="Profile overview">
+        <div class="profile-card glass">
+          <div class="profile-top">
+            <div class="avatar" aria-hidden="true">C</div>
+            <div>
+              <p class="profile-name">Creator</p>
+              <p class="profile-role">Builder · Strategist · Operator</p>
+            </div>
+          </div>
+
+          <p class="profile-bio">
+            A polished starting point for your personal site, portfolio, or command center.
+          </p>
+
+          <ul class="profile-list">
+            <li><span>Location</span><strong>Anywhere with a browser</strong></li>
+            <li><span>Focus</span><strong>Projects, systems, results</strong></li>
+            <li><span>Style</span><strong>Dark, modern, responsive</strong></li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="section content-grid">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>One page. Clear signal. No clutter.</h2>
+      </div>
+      <div class="glass panel">
+        <p>
+          This homepage is built as a compact, high-quality landing page for a creator who wants a sharp online presence.
+          It works as a personal homepage, a portfolio starter, or a hub for links and updates.
+        </p>
+        <p>
+          The design is intentionally lightweight so it can be hosted for free on GitHub Pages, Netlify, or Vercel without any framework build step.
+        </p>
+      </div>
+    </section>
+
+    <section id="systems" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Systems</p>
+        <h2>Three pillars of the site.</h2>
+      </div>
+
+      <div class="cards" id="systemCards" aria-live="polite"></div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Work</p>
+        <h2>What this site can showcase.</h2>
+      </div>
+
+      <div class="timeline glass panel">
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div>
+            <h3>Featured project</h3>
+            <p>Showcase your best project with a short summary, a screenshot, and a live link.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div>
+            <h3>Writing / notes / ideas</h3>
+            <p>Use this section for essays, reports, lessons, or a small knowledge vault.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+          <div>
+            <h3>Contact / collaboration</h3>
+            <p>Put email, Telegram, GitHub, or any preferred channel in one obvious place.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Ready for deployment.</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="glass panel">
+          <h3>Direct links</h3>
+          <div class="contact-links">
+            <a id="emailLink" href="mailto:creator@example.com">creator@example.com</a>
+            <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
+            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+
+        <div class="glass panel">
+          <h3>Short note</h3>
+          <p id="motivationalLine">Simple systems. Strong execution. Clean outcomes.</p>
+          <button class="button button-secondary" id="shuffleBtn" type="button">Change line</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Creator. Built for free hosting.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
