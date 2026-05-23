@@ -1,6 +1,6 @@
-# Creator Homepage
+# creator-homepage
 
-A sleek, static personal homepage built with plain HTML, CSS, and JavaScript.
+A dark, editorial personal homepage for **Volfirrrr** — built to feel like a product launch page with a Hermes-like shadow aesthetic.
 
 ## Live site
 
@@ -10,13 +10,15 @@ https://tii-cmd.github.io/creator-homepage/
 
 - HTML
 - CSS
-- JavaScript
+- Vanilla JavaScript
 - GitHub Pages
 
 ## Local preview
 
-Open `index.html` in a browser, or run any simple static server.
+Open `index.html` in a browser, or serve the folder with any static file server.
 
-## Deployment
+## Notes
 
-This repository is configured for GitHub Pages from the `main` branch at the repository root.
+- Theme toggle works in modern browsers and degrades gracefully.
+- Copy buttons use the Clipboard API with a fallback path.
+- The page is designed to stay readable and usable even if advanced features are missing.

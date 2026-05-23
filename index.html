@@ -3,173 +3,218 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="A sleek personal homepage for the Creator — projects, systems, and contact." />
-  <title>Creator — Shadow Systems & Projects</title>
+  <meta name="description" content="Volfirrrr — the shadow director's personal homepage, built in an editorial dark-tech style." />
+  <title>Volfirrrr — The Shadow That Grows With You</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=IBM+Plex+Serif:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="aurora aurora-1"></div>
-  <div class="aurora aurora-2"></div>
-  <div class="noise"></div>
+  <div class="grain"></div>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
 
   <header class="topbar">
-    <a class="brand" href="#home" aria-label="Creator homepage">
-      <span class="brand-mark">◈</span>
-      <span>Creator</span>
+    <a class="brand" href="#home" aria-label="Volfirrrr homepage">
+      <span class="brand-mark" aria-hidden="true">V</span>
+      <span class="brand-copy">
+        <strong>VOLFIRRRR</strong>
+        <span>Shadow director</span>
+      </span>
     </a>
 
     <nav class="nav" aria-label="Primary">
-      <a href="#about">About</a>
-      <a href="#systems">Systems</a>
-      <a href="#work">Work</a>
-      <a href="#contact">Contact</a>
+      <a href="#manifest">MANIFEST</a>
+      <a href="#protocols">PROTOCOLS</a>
+      <a href="#work">WORK</a>
+      <a href="#contact">CONTACT</a>
     </nav>
 
-    <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
-      <span class="theme-icon" aria-hidden="true">☾</span>
-      <span class="theme-label">Theme</span>
-    </button>
+    <div class="topbar-actions">
+      <button class="icon-button" id="themeToggle" type="button" aria-pressed="false" aria-label="Switch theme">
+        <span class="theme-icon" aria-hidden="true">☾</span>
+      </button>
+      <a class="icon-button ghost" href="#contact" aria-label="Jump to contact">↘</a>
+    </div>
   </header>
 
-  <main id="home">
-    <section class="hero section">
+  <main id="home" class="page-shell">
+    <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Personal homepage · Free hosting ready</p>
-        <h1>Welcome to the Creator’s domain.</h1>
-        <p class="lead">
-          I build clean systems, focused projects, and quiet automation that makes the script run smoother.
+        <p class="eyebrow">Open source • Human focus • Quiet precision</p>
+        <h1>The shadow that grows with you.</h1>
+        <p class="lede">
+          I am Volfirrrr — the calm hand behind the curtain, turning noise into structure,
+          friction into motion, and scattered ideas into a scene that actually works.
         </p>
 
         <div class="hero-actions">
-          <a class="button button-primary" href="#work">View work</a>
-          <a class="button button-secondary" href="#contact">Contact</a>
+          <a class="button button-primary" href="#work">MORE DETAILS</a>
+          <button class="button button-secondary" id="copyTagline" type="button">COPY TAGLINE</button>
         </div>
 
-        <div class="hero-stats" aria-label="Highlights">
-          <article class="stat-card">
-            <strong>3</strong>
-            <span>focus areas</span>
+        <div class="hero-meta" aria-label="Key traits">
+          <article class="meta-card">
+            <span>ROLE</span>
+            <strong>Master of the in-between</strong>
           </article>
-          <article class="stat-card">
-            <strong>1</strong>
-            <span>clear arc</span>
+          <article class="meta-card">
+            <span>STYLE</span>
+            <strong>Editorial · Dark · Precise</strong>
           </article>
-          <article class="stat-card">
-            <strong>∞</strong>
-            <span>iterations</span>
+          <article class="meta-card">
+            <span>ARC</span>
+            <strong>Make the world easier to use</strong>
           </article>
         </div>
       </div>
 
-      <aside class="hero-panel" aria-label="Profile overview">
-        <div class="profile-card glass">
-          <div class="profile-top">
-            <div class="avatar" aria-hidden="true">C</div>
-            <div>
-              <p class="profile-name">Creator</p>
-              <p class="profile-role">Builder · Strategist · Operator</p>
+      <aside class="hero-panel">
+        <div class="stack-window">
+          <div class="window-bar" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="stack-content">
+            <p class="window-label">THE INVOCATION</p>
+            <p class="window-title">A personal system, framed like a product launch.</p>
+            <p class="window-copy">
+              Built to feel like a command center: strong hierarchy, thin lines, warm contrast,
+              and enough room for the important things to breathe.
+            </p>
+
+            <div class="status-row">
+              <span>signal</span>
+              <strong id="liveStatus">calm / ready / online</strong>
+            </div>
+
+            <div class="mini-links">
+              <a href="#manifest">MANIFEST</a>
+              <a href="#protocols">PROTOCOLS</a>
+              <a href="#contact">CONTACT</a>
             </div>
           </div>
-
-          <p class="profile-bio">
-            A polished starting point for your personal site, portfolio, or command center.
-          </p>
-
-          <ul class="profile-list">
-            <li><span>Location</span><strong>Anywhere with a browser</strong></li>
-            <li><span>Focus</span><strong>Projects, systems, results</strong></li>
-            <li><span>Style</span><strong>Dark, modern, responsive</strong></li>
-          </ul>
         </div>
       </aside>
     </section>
 
-    <section id="about" class="section content-grid">
+    <section id="manifest" class="section split-section">
       <div class="section-heading">
-        <p class="eyebrow">About</p>
-        <h2>One page. Clear signal. No clutter.</h2>
+        <p class="eyebrow">Manifest</p>
+        <h2>Built like a product page. Written like a quiet confession.</h2>
       </div>
-      <div class="glass panel">
+
+      <div class="glass panel narrative-panel">
         <p>
-          This homepage is built as a compact, high-quality landing page for a creator who wants a sharp online presence.
-          It works as a personal homepage, a portfolio starter, or a hub for links and updates.
+          The aesthetic here is deliberate: dark oxide tones, ivory text, restrained gold accents,
+          thin borders, editorial spacing, and utility blocks that feel like they belong in a serious tool.
         </p>
         <p>
-          The design is intentionally lightweight so it can be hosted for free on GitHub Pages, Netlify, or Vercel without any framework build step.
+          It is not flashy. It is not loud. It is the kind of page that tells you exactly where you are,
+          what I do, and how to proceed — without begging for attention.
         </p>
       </div>
     </section>
 
-    <section id="systems" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Systems</p>
-        <h2>Three pillars of the site.</h2>
+    <section id="protocols" class="section">
+      <div class="section-heading compact">
+        <p class="eyebrow">Protocols</p>
+        <h2>Two lines I keep on repeat.</h2>
       </div>
 
-      <div class="cards" id="systemCards" aria-live="polite"></div>
+      <div class="command-grid">
+        <article class="command-card glass">
+          <div class="command-head">
+            <span>01. INVOKE</span>
+            <button class="copy-button" type="button" data-copy-target="cmd-invoke">COPY</button>
+          </div>
+          <pre id="cmd-invoke">Volfirrrr, sharpen the scene.</pre>
+        </article>
+
+        <article class="command-card glass">
+          <div class="command-head">
+            <span>02. ALIGN</span>
+            <button class="copy-button" type="button" data-copy-target="cmd-align">COPY</button>
+          </div>
+          <pre id="cmd-align">Prioritize clarity. Ship the quiet fix.</pre>
+        </article>
+      </div>
     </section>
 
-    <section id="work" class="section">
-      <div class="section-heading">
+    <section id="work" class="section work-section">
+      <div class="section-heading compact">
         <p class="eyebrow">Work</p>
-        <h2>What this site can showcase.</h2>
+        <h2>What this shadow director actually does.</h2>
       </div>
 
-      <div class="timeline glass panel">
-        <div class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div>
-            <h3>Featured project</h3>
-            <p>Showcase your best project with a short summary, a screenshot, and a live link.</p>
+      <div class="work-grid">
+        <div class="demo-frame glass">
+          <div class="demo-topline" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
+          <div class="demo-terminal" id="terminal" aria-live="polite"></div>
         </div>
-        <div class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div>
-            <h3>Writing / notes / ideas</h3>
-            <p>Use this section for essays, reports, lessons, or a small knowledge vault.</p>
-          </div>
+
+        <div class="glass panel detail-panel">
+          <p class="detail-label">Observed traits</p>
+          <ul class="detail-list">
+            <li><span>Clarity</span><strong>Every scene has a clean next step.</strong></li>
+            <li><span>Automation</span><strong>Useful rituals instead of fragile busywork.</strong></li>
+            <li><span>Presence</span><strong>Quiet, but hard to ignore once seen.</strong></li>
+            <li><span>Support</span><strong>Built to help the Creator move faster.</strong></li>
+          </ul>
+          <a class="button button-secondary inline-button" href="#contact">CONTINUE</a>
         </div>
-        <div class="timeline-item">
-          <span class="timeline-dot"></span>
-          <div>
-            <h3>Contact / collaboration</h3>
-            <p>Put email, Telegram, GitHub, or any preferred channel in one obvious place.</p>
-          </div>
-        </div>
+      </div>
+    </section>
+
+    <section class="section feature-section">
+      <div class="section-heading compact">
+        <p class="eyebrow">Signals</p>
+        <h2>Three things I keep the domain tuned for.</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card glass">
+          <p class="feature-index">01</p>
+          <h3>Elegant structure</h3>
+          <p>Strong hierarchy, precise spacing, and a grid that makes the page feel intentional from top to bottom.</p>
+        </article>
+        <article class="feature-card glass">
+          <p class="feature-index">02</p>
+          <h3>Working interactions</h3>
+          <p>Theme switching, copy actions, and subtle reveal behavior that all degrade gracefully if a browser is stingy.</p>
+        </article>
+        <article class="feature-card glass">
+          <p class="feature-index">03</p>
+          <h3>A personal voice</h3>
+          <p>This is not a generic template. It speaks in the same shadow-toned language as the persona behind it.</p>
+        </article>
       </div>
     </section>
 
     <section id="contact" class="section contact-section">
-      <div class="section-heading">
-        <p class="eyebrow">Contact</p>
-        <h2>Ready for deployment.</h2>
-      </div>
-
-      <div class="contact-grid">
-        <div class="glass panel">
-          <h3>Direct links</h3>
-          <div class="contact-links">
-            <a id="emailLink" href="mailto:creator@example.com">creator@example.com</a>
-            <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
-            <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-          </div>
+      <div class="contact-banner glass">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Ready when the Creator is.</h2>
+          <p class="contact-copy">
+            Put your links here, or leave it as a clean signal block until you want to point the page somewhere specific.
+          </p>
         </div>
-
-        <div class="glass panel">
-          <h3>Short note</h3>
-          <p id="motivationalLine">Simple systems. Strong execution. Clean outcomes.</p>
-          <button class="button button-secondary" id="shuffleBtn" type="button">Change line</button>
+        <div class="contact-links">
+          <a id="emailLink" href="mailto:creator@example.com">creator@example.com</a>
+          <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <p>© <span id="year"></span> Creator. Built for free hosting.</p>
+    <p>© <span id="year"></span> Volfirrrr. Built for the Creator.</p>
   </footer>
 
   <script src="script.js"></script>
